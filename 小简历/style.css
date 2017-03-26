@@ -1,0 +1,111 @@
+*{margin: 0;padding:0}
+ul,ol{
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+section.summary{
+    height: 100vh; /*等于一个视口*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.summary img.avatar{
+    width: 154px;
+    height: 154px;
+    border-radius:50%;
+}
+.summary .description{
+    line-height:1.8;
+    text-align: center;
+}
+
+
+section.works{
+    background: rgb(244,244,244);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+@media(max-width:420px) {
+    section.works{
+        height: auto;
+        min-height:100vh;
+        padding: 1em;
+    }
+}
+.imgContainer{
+    padding:10px 10px 3px;
+    background: #fff;
+    text-align: right;
+}
+section.works img{
+    max-width: 200px;
+}
+section.works > ul{
+    display:flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    justify-content: space-between;
+}
+@media(max-width:420px) {
+    section.works > ul{
+        justify-content: center;
+    }
+}
+section.works > ul h3{
+    font-size: 16px;
+    margin:10px 0;
+    padding-left: 10px;
+    font-weight: normal;
+}
+section.works > h2, section.contact > h2,section.skills > h2{
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+section.skills{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+}
+
+
+section.contact{
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    line-height: 2;
+}
+section.contact > dl{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20em;
+    justify-content: center;
+    align-items:center ;
+}
+section.contact dt{
+    width: 3em;
+}
+section.contact dd{
+    width: 17em;
+}
+section.contact dd a{
+    text-decoration: underline;
+}
+
+
+
+

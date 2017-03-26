@@ -1,0 +1,25 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+header{
+    height: 50px;
+    background: #ff6773;
+}
+.content{
+    display: flex;
+}
+footer{
+    height: 50px;
+    background: #ff6773;
+}
+.content> aside{
+    width: 120px;
+    background: #444;
+}
+.content > main{
+    height: 400px;
+    background: #faf2cc;
+    flex-grow:1;
+}
+.content > nav{
+    width: 100px;
+    background: #5782ff;
+}

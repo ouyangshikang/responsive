@@ -1,0 +1,32 @@
+*{margin:0;padding:0;box-sizing: border-box;}
+.container{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+header{
+    height: 60px;
+    background: #ff5656;
+    text-align: center;
+    line-height: 60px;
+}
+footer{
+    height: 60px;
+    background: #ff5656;
+}
+main{
+    overflow: auto;
+    flex-grow: 1;
+}
+footer > ul{
+    height: 60px;
+    display: flex;
+    list-style: none;
+}
+footer > ul >li{
+    height: 100%;
+    width: 25%;
+    border:1px solid #cccccc;
+    text-align: center;
+    line-height: 60px;
+}
